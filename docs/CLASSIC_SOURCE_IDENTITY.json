@@ -1,13 +1,15 @@
 {
   "baseline_version": "0.3.0+sm120.2",
-  "release_version": "0.3.0+classic.1",
+  "release_version": "0.3.0+classic.2",
   "baseline_python_modules": 236,
   "retained_modules": 236,
   "changed_python_modules": [
-    "bemarkdown/doctor.py"
+    "bemarkdown/doctor.py",
+    "bemarkdown/stage_forecasts.py"
   ],
-  "change": "diagnostic smoke token budget aligned with frozen production recipe",
-  "conversion_python_modules_unchanged": true,
+  "change": "Diagnostic token recipe and strict installation-RECORD payload equivalence; conversion decision algorithms retained",
+  "conversion_decision_modules_unchanged": true,
   "new_candidate_included": false,
-  "wheel_sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255"
+  "wheel_sha256": "d7de8f938963ab9bc7438fbc305a386e4abef598df67c2e070cd11b1e3f419fe",
+  "screening_adapter_change": "Bounded WinError32 recovery before CreateProcess succeeds; engine source and archive match."
 }

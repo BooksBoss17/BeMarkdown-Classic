@@ -1,7 +1,7 @@
 {
   "release_id": "semantic-retention-20261008-v1",
   "runtime_id": "0e46bef39554ddf9",
-  "engine_zip_sha256": "01001a215a6f817be7c11e8800c24dc1d10c9e927a6e39e36cfaec8a7fb977c9",
+  "engine_zip_sha256": "0782322d199f141c2f41a3fe90f380e313433cebee8f8cc9ff748b7e1167bf79",
   "base_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
   "converter_commit": "7fe450e19305b828c199d602c23a8337aaa1f03b",
   "bemarkdown_auto_integrated": true,
@@ -34,5 +34,6 @@
     "protect_transcription_evidence": true,
     "purpose_observation": "QWEN_SAME_REVIEWER",
     "frozen_retention_models_changed": false
-  }
+  },
+  "public_adapter_revision": "classic.2-pre-creation-sharing-recovery"
 }

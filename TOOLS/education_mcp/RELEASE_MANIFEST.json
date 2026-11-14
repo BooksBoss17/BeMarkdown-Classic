@@ -36,12 +36,12 @@
     "workspace_manager.py": "969bed90ce7f8d9fcbb58cd4a7bcc95197a9ebaf8e3c8f740923b608c93681e9",
     "workspace_template.json": "2464cf0309222c52f5940ceb21ef3aa0cbc010b8e02b7f6784510a096f125096"
   },
-  "bemarkdown_wheel_sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255",
+  "bemarkdown_wheel_sha256": "d7de8f938963ab9bc7438fbc305a386e4abef598df67c2e070cd11b1e3f419fe",
   "quality_status": "CANDIDATES_AND_REVIEW_REUSE_NOT_GENERAL_AUTO_DELETION",
   "optimized_ocr_route": {
     "tool": "TOOLS/bemarkdown",
-    "release_id": "v0.3.0-classic.1",
-    "route_manifest_sha256": "6fadf2f311c4d74f5321b4fc10b5d53fdabcc0ea75bac57d0ef4f1549a3bd09a",
+    "release_id": "v0.3.0-classic.2",
+    "route_manifest_sha256": "5a0d14a3093beb24f68ba0c3377fd8df17fd69efa25f801dbe381a447f2c4e31",
     "status": "UNIFIED_SINGLE_WHEEL"
   },
   "runtime_manager_integration": "managed-adaptive-20261015-rm8",
@@ -52,7 +52,7 @@
     "classifier_guard": "EXISTING_FROZEN_SEMANTIC_SUPERVISOR_AFTER_OCR_EXIT"
   },
   "documentation_revision": "delivery-cleanup-20261016",
-  "public_release_id": "v0.3.0-classic.1",
+  "public_release_id": "v0.3.0-classic.2",
   "distribution_scope": "PUBLIC",
   "unified_release_id": "bemarkdown-unified-20261104-v1"
 }

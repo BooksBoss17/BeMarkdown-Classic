@@ -44,7 +44,7 @@ class InstallerTests(unittest.TestCase):
             except PermissionError as exc:
                 if getattr(exc, 'winerror', None) != 32 or attempt == 19:
                     raise
-                time.sleep(0.1)
+                time.sleep(0.25)
 
     def test_contract_independent_of_tool_wheel_and_changes_with_dependencies(self):
         lock = self.root / 'scripts/requirements-pypi.lock'

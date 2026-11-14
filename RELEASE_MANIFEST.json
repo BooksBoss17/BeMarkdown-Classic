@@ -1,6 +1,6 @@
 {
   "schema": "education-public-file-inventory-v1",
-  "release_id": "v0.3.0-classic.1",
+  "release_id": "v0.3.0-classic.2",
   "repository": "BooksBoss17/BeMarkdown-Classic",
   "files": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/public-mcp-sdk.yml",
-      "sha256": "531d5202b77acbfad223b547bd541bd83f97e8cf35ae1714d95dff4e30f343d0",
-      "bytes": 2936
+      "sha256": "e720d6134fa6fad48178906dd98fdc6994070dcf041283098a569ac1992bd1d6",
+      "bytes": 3210
     },
     {
       "path": ".gitignore",
@@ -30,13 +30,13 @@
     },
     {
       "path": "docs/CLASSIC_SOURCE_IDENTITY.json",
-      "sha256": "7c59ba005077ae3bd0560c8b0a3de043de07345fe0eda690e9cb35e45e723157",
-      "bytes": 469
+      "sha256": "8df1353e987f63212de9f060bec8cfd7112ef1bd6f1a9d4fe6aece516e304c27",
+      "bytes": 683
     },
     {
       "path": "docs/CLASSIC_VALIDATION.md",
-      "sha256": "3bfb2557235847d77001c7a0257bcb2907ecd825a150bafcdd29eb53831fcf4e",
-      "bytes": 2723
+      "sha256": "cb4757b4834aa3c9466590bc85361bc59e4fe22e4ba7dfa39fccc31a1f4aa7e7",
+      "bytes": 3052
     },
     {
       "path": "docs/EXTENDING.md",
@@ -62,6 +62,11 @@
       "path": "docs/MANAGED_CONVERSION.md",
       "sha256": "6715d24b0b6329d0e053587326b700c0d62d087db22c69aef6a21fcc4d8c3788",
       "bytes": 4759
+    },
+    {
+      "path": "docs/PORTABLE_INSTALLATION.md",
+      "sha256": "a1a4af6df531890dc124ae5325b2c78b9bc39e76ff2e7f9dcada992912d37939",
+      "bytes": 1357
     },
     {
       "path": "docs/RELEASE_20261007.md",
@@ -265,8 +270,8 @@
     },
     {
       "path": "scripts/runtime_setup.py",
-      "sha256": "088b2fe1b22b6ff3efdf4d1047880fa58b90a12c5ef41b6d25013771763d4bf1",
-      "bytes": 10963
+      "sha256": "e12be1d78fb188537afb1d05ae0d1b3ee7120ec7a0e13545b50352198c8df2aa",
+      "bytes": 10964
     },
     {
       "path": "scripts/setup.py",
@@ -310,7 +315,7 @@
     },
     {
       "path": "SOURCE/bemarkdown/pyproject.toml",
-      "sha256": "c0dd26fcad4ee92eb8db17564e246579706c9b26e796dd2d021cd0ffa36a346e",
+      "sha256": "c41d390ac5c3df94fcc71fc60b2e9a9db4099337367a88f3ef337b718e79ae19",
       "bytes": 1285
     },
     {
@@ -320,8 +325,8 @@
     },
     {
       "path": "SOURCE/bemarkdown/SOURCE_BINDING.json",
-      "sha256": "d6dbe4ca82f77da3229598df71af21877f6dafc4c8346498ea4e26ec9c5f1b5d",
-      "bytes": 436
+      "sha256": "65efb85d40fa1aff75e407f9d68a7a84ea46d68aad86371afd5d823aa27b8254",
+      "bytes": 691
     },
     {
       "path": "SOURCE/bemarkdown/src/bemarkdown/__init__.py",
@@ -1385,8 +1390,8 @@
     },
     {
       "path": "SOURCE/bemarkdown/src/bemarkdown/runtime/RESOURCE_FORECASTS_6GB.json",
-      "sha256": "cddb656d56f1fbc6c6cd94f123622331c87202da37d67ad5e910bc81a54f8359",
-      "bytes": 19604
+      "sha256": "b89a2b24b82767fa95414faf1da0bda9d01c1840223a2ef952d0095e2c3cf146",
+      "bytes": 25277
     },
     {
       "path": "SOURCE/bemarkdown/src/bemarkdown/scanner.py",
@@ -1455,8 +1460,8 @@
     },
     {
       "path": "SOURCE/bemarkdown/src/bemarkdown/stage_forecasts.py",
-      "sha256": "e1c494d03bceba15effedc22ae5dd67f6afb3adab78878e042b712ba66c646cf",
-      "bytes": 11742
+      "sha256": "aa4ab44e1ed6f3a87abc0ad9bdf413d8b316585b4e15fa47f2c9661181bf20ee",
+      "bytes": 14387
     },
     {
       "path": "SOURCE/bemarkdown/src/bemarkdown/static/formula_review/app.js",
@@ -1945,8 +1950,8 @@
     },
     {
       "path": "SOURCE/semantic_retention_engine/tmp/retention-v6-20261003/v36-low-commit/job_family_v4.py",
-      "sha256": "8e23d51897d14d86d432b760a7243c87de123f6e6c7cb9b37dc5735ba4fdb83b",
-      "bytes": 4470
+      "sha256": "21fc440496817ae6a43886e67ad8e4c7085d5164d10f8c7906e6ed62308ab85a",
+      "bytes": 5088
     },
     {
       "path": "SOURCE/semantic_retention_engine/tmp/retention-v6-20261003/v36-low-commit/probe.py",
@@ -1980,8 +1985,8 @@
     },
     {
       "path": "tests/test_installer.py",
-      "sha256": "233a3ff89289bbdd20f96761d7a02ed48a6f49c706b8c2cd2101b2d8dc00487e",
-      "bytes": 16125
+      "sha256": "bb2700c98e50d85577fad1d899f085ccc1473f49874a8ff39f9cc1ddf01de77a",
+      "bytes": 16126
     },
     {
       "path": "tests/test_managed_screening_public.py",
@@ -1990,8 +1995,13 @@
     },
     {
       "path": "tests/test_mcp_sdk_session.py",
-      "sha256": "31acb05d7f3707f3209f00b1ed69b152ee679074d90112778bf8d8c13ca3bf4a",
+      "sha256": "371a0c4d661efb709dda234c4eba001ea9e801884ecfd4e065d8778008121693",
       "bytes": 6037
+    },
+    {
+      "path": "tests/test_portable_record.py",
+      "sha256": "7c3a2610d3da13b8826539831deb20c8306f227032f39cb939e1ca0c670ac517",
+      "bytes": 3729
     },
     {
       "path": "tests/test_prose_edge_crop.py",
@@ -2002,6 +2012,11 @@
       "path": "tests/test_retention_distribution.py",
       "sha256": "112795c040a9593c26279f4bbde989070331e5a09da87f61a5b1cfc140d22a05",
       "bytes": 5896
+    },
+    {
+      "path": "tests/test_screening_spawn.py",
+      "sha256": "fc9210261192e94287778a0dbf4cfeba8f50dd450251c0690dae4f7b8e931ec7",
+      "bytes": 2415
     },
     {
       "path": "tests/test_semantic_retention_public.py",
@@ -2039,9 +2054,9 @@
       "bytes": 1
     },
     {
-      "path": "TOOLS/bemarkdown/dist/bemarkdown-0.3.0+classic.1-py3-none-any.whl",
-      "sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255",
-      "bytes": 1574832
+      "path": "TOOLS/bemarkdown/dist/bemarkdown-0.3.0+classic.2-py3-none-any.whl",
+      "sha256": "d7de8f938963ab9bc7438fbc305a386e4abef598df67c2e070cd11b1e3f419fe",
+      "bytes": 1576607
     },
     {
       "path": "TOOLS/bemarkdown/docs/ADAPTIVE_OCR.md",
@@ -2110,7 +2125,7 @@
     },
     {
       "path": "TOOLS/bemarkdown/RELEASE_MANIFEST.json",
-      "sha256": "5c7bfd6c74af650fcc5cd7aabf87e98c3c542accf77fd5f462370e19482ff59d",
+      "sha256": "532bceca6c90bdb46ff018ef38538de38304107381dc3397fa7068f0afb862a5",
       "bytes": 947
     },
     {
@@ -2185,7 +2200,7 @@
     },
     {
       "path": "TOOLS/bemarkdown/ROUTE_MANIFEST.json",
-      "sha256": "6fadf2f311c4d74f5321b4fc10b5d53fdabcc0ea75bac57d0ef4f1549a3bd09a",
+      "sha256": "5a0d14a3093beb24f68ba0c3377fd8df17fd69efa25f801dbe381a447f2c4e31",
       "bytes": 6364
     },
     {
@@ -2250,7 +2265,7 @@
     },
     {
       "path": "TOOLS/bemarkdown/TOOL_MANIFEST.json",
-      "sha256": "3a54db2a645d8d41958eda51c053fc3c993c1ad5d493176b16de70d387b7a199",
+      "sha256": "257096c1011b5017ea4f6c942932b42aa55406a46a8b014a5328e4ce554ff479",
       "bytes": 63506
     },
     {
@@ -2305,7 +2320,7 @@
     },
     {
       "path": "TOOLS/education_mcp/RELEASE_MANIFEST.json",
-      "sha256": "2edf171f22d12a31e674e67d242e24c5197f549094ce755c2dca31f521392078",
+      "sha256": "fe2e81ed7662328e50ead397b4b38fd2cfe8a50b04cba53b05e3d8b7972b1b3c",
       "bytes": 4096
     },
     {
@@ -2435,7 +2450,7 @@
     },
     {
       "path": "TOOLS/runtime_manager/RELEASE_MANIFEST.json",
-      "sha256": "55c7653fa47211a83fe39d2d360fccef7c1f2bba5c0e86efc1918986b54c28d4",
+      "sha256": "f4a7a6558a617a9e84fb0ab20b9ec803d64638fdd6109f237e8ea9d784762073",
       "bytes": 3571
     },
     {
@@ -2555,13 +2570,13 @@
     },
     {
       "path": "TOOLS/semantic_retention/dist/engine-manifest.json",
-      "sha256": "f23921818f89bd7ef624f5d19f02ee90ca35dae5973750ff4d3222488ac64a39",
+      "sha256": "cadd6e36b5a3b4603d8a7280a9be0bc14e51f154c402bd8d0008f979d7dbaf7b",
       "bytes": 26537
     },
     {
       "path": "TOOLS/semantic_retention/dist/engine.zip",
-      "sha256": "01001a215a6f817be7c11e8800c24dc1d10c9e927a6e39e36cfaec8a7fb977c9",
-      "bytes": 109155
+      "sha256": "0782322d199f141c2f41a3fe90f380e313433cebee8f8cc9ff748b7e1167bf79",
+      "bytes": 109408
     },
     {
       "path": "TOOLS/semantic_retention/image_purpose.py",
@@ -2615,13 +2630,13 @@
     },
     {
       "path": "TOOLS/semantic_retention/RELEASE_MANIFEST.json",
-      "sha256": "b6d0366fd4a923efeb4081c82d3b136673f078474f01c0f484675f9754a17d29",
+      "sha256": "c3efd484ff9c9476e90cb9b2e8f35c48ec6cad5865786e79e70d7d70b3cb0a4d",
       "bytes": 5657
     },
     {
       "path": "TOOLS/semantic_retention/SCHEME.json",
-      "sha256": "2f30949c699fdf4d501408592ceae10e583349e8c7b01850f5dc7d6af2d8c5c0",
-      "bytes": 1480
+      "sha256": "a3a887bd84f796f4cf3bc8f033e671d96948d6fef318862e2d8cddc2b649df19",
+      "bytes": 1591
     },
     {
       "path": "TOOLS/semantic_retention/server.py",

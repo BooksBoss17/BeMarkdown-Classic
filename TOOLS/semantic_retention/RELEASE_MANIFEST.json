@@ -114,15 +114,15 @@
     "PUBLIC_RUNTIME_LOCK.json": "c21e43d7245fabf2ae380ecab532cde924cbef82cd95ca8bab78918ceb691941",
     "QUALIFICATION.json": "d10ce1bfd547b440a4a6f62f740ed653046efb7a44b8dc65d04abdce86c716b5",
     "README.md": "5d4387f5f90438e70db9c714e669c6d67e14d97040193457b4640cb8a9f82e07",
-    "SCHEME.json": "2f30949c699fdf4d501408592ceae10e583349e8c7b01850f5dc7d6af2d8c5c0",
+    "SCHEME.json": "a3a887bd84f796f4cf3bc8f033e671d96948d6fef318862e2d8cddc2b649df19",
     "server.py": "94850cd77a9ffb5a2cfafbc4ef24e82cfaa6d22e3820051d8e0558d73a203a59",
     "source_prepare.py": "e3eb9d373fb66a0f89555d1ed29720af727de51bc7c618dc1d368a71ae0be479",
     "THIRD_PARTY_NOTICES.md": "a2609f5cc46f67eb52e8a5f64640db44f348a60913e89f5d7b4eece09a84545d",
     "TOOL_MANIFEST.json": "acc6d4f3ad01b09c74f276ba2ddbf7d13e3fc56860f9b8a7453f1866e603c1ca",
     "worker.py": "de745e8b80ce607be50b0c987da124fc3bdf8252deb2892709cd89da685cae32",
-    "dist/engine-manifest.json": "f23921818f89bd7ef624f5d19f02ee90ca35dae5973750ff4d3222488ac64a39",
-    "dist/engine.zip": "01001a215a6f817be7c11e8800c24dc1d10c9e927a6e39e36cfaec8a7fb977c9"
+    "dist/engine-manifest.json": "cadd6e36b5a3b4603d8a7280a9be0bc14e51f154c402bd8d0008f979d7dbaf7b",
+    "dist/engine.zip": "0782322d199f141c2f41a3fe90f380e313433cebee8f8cc9ff748b7e1167bf79"
   },
-  "public_release_id": "v0.3.0-classic.1",
+  "public_release_id": "v0.3.0-classic.2",
   "distribution_scope": "PUBLIC"
 }

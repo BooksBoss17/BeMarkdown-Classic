@@ -6,7 +6,7 @@
   "input_scope": "existing unchanged batch/pixel/token/preprocessing policies; sampled inputs only, not arbitrary-input peak certification",
   "source_bindings": {
     "owned_stage_process.py": "428c994a82c9beb251c300fecff0acd466c50ef819b028dcf6e351480d4d0f12",
-    "stage_forecasts.py": "e1c494d03bceba15effedc22ae5dd67f6afb3adab78878e042b712ba66c646cf",
+    "stage_forecasts.py": "aa4ab44e1ed6f3a87abc0ad9bdf413d8b316585b4e15fa47f2c9661181bf20ee",
     "isolated_native_backends.py": "77272ebbad2742c7a4f99fcb5d5fdd3fb1c3be2c96917fe9acb7ab690432ab39",
     "model_registry.py": "1ca842ef82c50542b1deee8e18422aa21c92e5fbeb818930608671c862e8a9f0",
     "resource_profiles.py": "0bc7367067a38417fca67ea64015467d79fb2ca178b075631fffb4abd5713c72",
@@ -43,6 +43,17 @@
           "record_sha256": "b37c4ce3101538f7afb5b4bfe0c389d0d0b587e0a3a1dac48105045200ef1d28",
           "loader_files": {
             "numpy/__init__.py": "a1792c20af1146952a6dfce4c0daeb197b2832b23d27434a97544544c497742d"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "numpy-2.3.5.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/f2py-script.py",
+              "../../Scripts/f2py.exe",
+              "../../Scripts/numpy-config-script.py",
+              "../../Scripts/numpy-config.exe"
+            ],
+            "sha256": "00745e3d971bf3cb850c5cdf0a3164c7026bdedb5c5d7efbd3090b8712ac11ba"
           }
         },
         "opencv-contrib-python": {
@@ -51,6 +62,12 @@
           "record_sha256": "305fb4099872e747ab2d8e54942a2de8cf718c02146a7b384b6ec997093ddcb1",
           "loader_files": {
             "cv2/__init__.py": "957a91bfd98ffb07a10cd789b7c5c46806568476b61e34c7ad56a00092b981a5"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "opencv_contrib_python-4.10.0.84.dist-info",
+            "generated_entrypoint_files": [],
+            "sha256": "a7c83db615845ba162c020769117cb3227b68c7746bd16b749ad37f8d59f9b9a"
           }
         },
         "paddlepaddle-gpu": {
@@ -60,6 +77,15 @@
           "loader_files": {
             "paddle/__init__.py": "603bec39252e377a56fafce8850dd9eb58355d7d00ca029d5eda31a03be7d7e4",
             "paddle/base/libpaddle.pyd": "ad6d9a1c9f3534cf9b53999303e02c4015ce14f83fa23bc5333ea51900383af5"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "paddlepaddle_gpu-3.2.2.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/fleetrun-script.py",
+              "../../Scripts/fleetrun.exe"
+            ],
+            "sha256": "cf003f2bfd0b8d59734fcd3202c7edc4b372dbad9890c2a232be0202744e10eb"
           }
         },
         "paddlex": {
@@ -68,6 +94,17 @@
           "record_sha256": "c03790207fbd6cfdce11e6738a959162513fb9f968e87afac753e956e1051212",
           "loader_files": {
             "paddlex/__init__.py": "838666d1616120ba4dcc6859c4f9b4ce71ee504efc0be52195a8a1c4e0b3ecdc"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "paddlex-3.7.2.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/paddlex-script.py",
+              "../../Scripts/paddlex.exe",
+              "../../Scripts/paddlex_genai_server-script.py",
+              "../../Scripts/paddlex_genai_server.exe"
+            ],
+            "sha256": "bf6990ef3054290084fdbd2ad8f32be3b6ab8e9f5fa2796f1b9cc8254ba2e933"
           }
         },
         "pillow": {
@@ -76,6 +113,12 @@
           "record_sha256": "46233d6f1f283d8e32aa3a015fe06505ab916a852fc4731044810374b5fcd87e",
           "loader_files": {
             "PIL/Image.py": "59f1b98ed7bfd7b516b9f13ffd9dd3bc0aa1a495042accdb5ae4609b41c329d5"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "pillow-12.3.0.dist-info",
+            "generated_entrypoint_files": [],
+            "sha256": "c6a69b5e9c5fe705f01bb43db57c92fa613597e92867f1737b63ad1a9d2d7e6c"
           }
         }
       },
@@ -92,6 +135,23 @@
           "record_sha256": "0f66c1b2b32f6f297ded058debd0092cbca7b8d618beeb146f3ff9cfb48706ca",
           "loader_files": {
             "accelerate/__init__.py": "a479388e26b653f219788e744c45e73d0c172f021d441725ff2af89bf6ee7a8f"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "accelerate-1.15.0.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/accelerate-config-script.py",
+              "../../Scripts/accelerate-config.exe",
+              "../../Scripts/accelerate-estimate-memory-script.py",
+              "../../Scripts/accelerate-estimate-memory.exe",
+              "../../Scripts/accelerate-launch-script.py",
+              "../../Scripts/accelerate-launch.exe",
+              "../../Scripts/accelerate-merge-weights-script.py",
+              "../../Scripts/accelerate-merge-weights.exe",
+              "../../Scripts/accelerate-script.py",
+              "../../Scripts/accelerate.exe"
+            ],
+            "sha256": "1686502dceff0c77e6ae2514cab6f75b6689c50a01fb06c5e56f3150e731d94e"
           }
         },
         "huggingface-hub": {
@@ -100,6 +160,19 @@
           "record_sha256": "cacd1453bf148c5a2f400af80c32a21ed89d6908eb616cc9e164b5f4beacf8ea",
           "loader_files": {
             "huggingface_hub/__init__.py": "284be6e001a015f9933e756c6f6552b7266d811aff7b5124c960b5f1fc66b27e"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "huggingface_hub-1.33.0.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/hf-script.py",
+              "../../Scripts/hf.exe",
+              "../../Scripts/huggingface-cli-script.py",
+              "../../Scripts/huggingface-cli.exe",
+              "../../Scripts/tiny-agents-script.py",
+              "../../Scripts/tiny-agents.exe"
+            ],
+            "sha256": "0a34b4ccc101ad1066d08f97bcde308bd4153c6fffce31071594d52361104d4f"
           }
         },
         "numpy": {
@@ -108,6 +181,17 @@
           "record_sha256": "b2b38a1d6c3bb61fece194869865243c52ec8b8990592b08b2182d04d5f74946",
           "loader_files": {
             "numpy/__init__.py": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "numpy-2.5.4.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/f2py-script.py",
+              "../../Scripts/f2py.exe",
+              "../../Scripts/numpy-config-script.py",
+              "../../Scripts/numpy-config.exe"
+            ],
+            "sha256": "89ce9f3d07135ccf5e95b0293b1e1f95ca5f0de6205d5f554e8b06cb7eb3c0da"
           }
         },
         "pillow": {
@@ -116,6 +200,12 @@
           "record_sha256": "85afc050a07e9e71f698a7481c9a89c525d08f73c14ed49248a521b34e9f38c4",
           "loader_files": {
             "PIL/Image.py": "59f1b98ed7bfd7b516b9f13ffd9dd3bc0aa1a495042accdb5ae4609b41c329d5"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "pillow-12.3.0.dist-info",
+            "generated_entrypoint_files": [],
+            "sha256": "12cfdd51f55704e013bd24a5cad5725ab18a921912bd601baf1f3135f78ffe2e"
           }
         },
         "safetensors": {
@@ -124,6 +214,12 @@
           "record_sha256": "5104da9df47c2cfd517218e0450554a9045addf1f97b31cc83fda17f1e556625",
           "loader_files": {
             "safetensors/__init__.py": "3bc1e524ebaba28b4de3b3ebad1edfc623190a1d4fc34e76b900fa34e0c37bbd"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "safetensors-0.8.0.dist-info",
+            "generated_entrypoint_files": [],
+            "sha256": "4b6594f07651327981f6a9e900e6a127d9cbfacf726ed753c6913a73a76580be"
           }
         },
         "torch": {
@@ -133,6 +229,17 @@
           "loader_files": {
             "torch/__init__.py": "2d89482562a491093a10c2dcf9a83eea070f02b69b65aa4ae1b95ad23bcdbcaf",
             "torch/_C.cp312-win_amd64.pyd": "b34f87dc1c250bcb3d2078a255d1ebfe2c6247e1efe9dd1f9707194e66c83548"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "torch-2.14.0+cu130.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/torchfrtrace-script.py",
+              "../../Scripts/torchfrtrace.exe",
+              "../../Scripts/torchrun-script.py",
+              "../../Scripts/torchrun.exe"
+            ],
+            "sha256": "7f13e8b760f68ce1195c4f410d53fabbb2697f489b8e558d16014be6707f691d"
           }
         },
         "transformers": {
@@ -141,6 +248,15 @@
           "record_sha256": "da63fe63d04a2d06bbc6847f618ca5db3ad72059397de25007e00187549c51c3",
           "loader_files": {
             "transformers/__init__.py": "2725cadd5afaa29b2a12faec1960cb7ac1df77dc76d655310efb33d4607b35f5"
+          },
+          "portable_record": {
+            "schema": "windows-wheel-record-installation-v1",
+            "dist_info_dir": "transformers-5.17.0.dist-info",
+            "generated_entrypoint_files": [
+              "../../Scripts/transformers-script.py",
+              "../../Scripts/transformers.exe"
+            ],
+            "sha256": "0ee7c9a3fd55c60716d4e89b7dde6cb2dde5730e07a7b37268b86edac727cb60"
           }
         }
       },

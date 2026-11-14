@@ -159,7 +159,7 @@ def readonly_probe(command, **kwargs):
         except OSError as exc:
             if getattr(exc, 'winerror', None) != 32 or attempt == 19:
                 raise
-            time.sleep(0.1)
+            time.sleep(0.25)
 
 
 def verify_tool(runtime, wheel):

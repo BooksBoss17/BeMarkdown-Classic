@@ -34,6 +34,10 @@ jobs:
         run: |
           python scripts/verify_release.py
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -m unittest discover -s tests -p test_screening_spawn.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -m unittest discover -s tests -p test_portable_record.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python -m unittest discover -s tests -p test_classic_install_profile.py -v
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python -m unittest discover -s tests -p test_downloads.py -v
@@ -51,7 +55,7 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           & $runtime -m pip install -r "TOOLS\bemarkdown\runtime\requirements-core.lock"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          & $runtime -m pip install --no-deps "TOOLS\bemarkdown\dist\bemarkdown-0.3.0+classic.1-py3-none-any.whl"
+          & $runtime -m pip install --no-deps "TOOLS\bemarkdown\dist\bemarkdown-0.3.0+classic.2-py3-none-any.whl"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           & $runtime -m pip install "pytest>=8,<9"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

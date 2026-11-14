@@ -5,7 +5,9 @@ inputs. No Torch/Paddle imports, model changes, fallback budgets or thresholds.
 """
 from __future__ import annotations
 
+import csv
 import hashlib
+import io
 import importlib.metadata
 import json
 import math
@@ -67,9 +69,44 @@ def actor_recipe(config):
             "backend_loader": config.get("backend_loader")}
 
 
+def portable_record_identity(record_text, recipe):
+    """Hash wheel payload rows; only explicitly frozen installer outputs differ.
+
+    Windows console launchers embed the environment path. INSTALLER/REQUESTED,
+    direct_url and bytecode are generated during installation, not model code.
+    Payload paths, sizes and hashes (including entry_points.txt) remain bound.
+    """
+    if recipe.get("schema") != "windows-wheel-record-installation-v1":
+        raise ForecastAdmissionError("FORECAST_RECORD_RECIPE_INVALID")
+    metadata = recipe["dist_info_dir"]
+    generated = set(recipe["generated_entrypoint_files"])
+    if not metadata.endswith(".dist-info") or "/" in metadata or "\\" in metadata:
+        raise ForecastAdmissionError("FORECAST_RECORD_RECIPE_INVALID")
+    if any(not p.startswith("../../Scripts/") or "/" in p[len("../../Scripts/"):]
+           for p in generated):
+        raise ForecastAdmissionError("FORECAST_RECORD_RECIPE_INVALID")
+    generated.update(metadata + "/" + name for name in (
+        "RECORD", "INSTALLER", "REQUESTED", "direct_url.json", "uv_cache.json"))
+    rows, seen = [], set()
+    for row in csv.reader(io.StringIO(record_text)):
+        if len(row) != 3:
+            raise ForecastAdmissionError("FORECAST_RECORD_ROWS_INVALID")
+        name, digest, size = row
+        if name in generated or ("__pycache__" in name.split("/") and name.endswith(".pyc")):
+            continue
+        if name in seen:
+            raise ForecastAdmissionError("FORECAST_RECORD_ROWS_INVALID")
+        seen.add(name)
+        if not digest.startswith("sha256=") or not size.isdigit():
+            raise ForecastAdmissionError("FORECAST_RECORD_PAYLOAD_UNHASHED")
+        rows.append(row)
+    return hashlib.sha256(json.dumps(sorted(rows), separators=(",", ":")).encode()).hexdigest()
+
+
 def dependency_identity(paths, required):
     """Resolve the actual child search path, then bind metadata and loader bytes."""
     found = {}
+    expected = {name: dict(spec) for name, spec in required.items()}
     for distribution in importlib.metadata.distributions(path=[str(p) for p in paths]):
         name = _normal(distribution.metadata.get("Name", ""))
         if name not in required or name in found:
@@ -84,9 +121,20 @@ def dependency_identity(paths, required):
         found[name] = {"version": distribution.version,
                        "metadata_sha256": _sha(meta / "METADATA"),
                        "record_sha256": _sha(record), "loader_files": files}
+        if "portable_record" in spec:
+            recipe = spec["portable_record"]
+            if meta.name != recipe["dist_info_dir"]:
+                raise ForecastAdmissionError("FORECAST_RECORD_METADATA_DIRECTORY_MISMATCH")
+            actual_recipe = dict(recipe, sha256=portable_record_identity(
+                record.read_text(encoding="utf-8"), recipe))
+            found[name]["portable_record"] = actual_recipe
+            if actual_recipe == recipe:
+                # Preserve the observed raw hash in the result. Equivalence is
+                # allowed only by the frozen payload recipe, never a new pin.
+                expected[name]["record_sha256"] = found[name]["record_sha256"]
     if set(found) != set(required):
         raise ForecastAdmissionError("FORECAST_DEPENDENCY_MISSING:" + ",".join(sorted(set(required) - set(found))))
-    if found != required:
+    if found != expected:
         raise ForecastAdmissionError("FORECAST_DEPENDENCY_BINDING_MISMATCH")
     return found
 

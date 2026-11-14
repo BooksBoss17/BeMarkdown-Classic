@@ -61,11 +61,26 @@ class Family:
         if self.thread:self.thread.join(5)
         if self.thread and self.thread.is_alive():raise RuntimeError('Family monitor did not stop')
 
+def create_suspended_process(*args):
+    # WinError32 here means CreateProcess did not return any process handle.
+    # Job assignment/resume and model requests occur only after success.
+    for attempt in range(20):
+        try:
+            return _winapi.CreateProcess(*args)
+        except OSError as exc:
+            if getattr(exc, 'winerror', None) != 32 or attempt == 19:
+                raise
+            save(probe.ROOT / 'spawn-recovery.json', {
+                'failed_creation_attempts': attempt + 1,
+                'error': 'WinError32', 'model_request_started': False})
+            time.sleep(0.1)
+
+
 def suspended(job,args,name):
     out=open(probe.ROOT/(name+'.log'),'wb');inp=open(os.devnull,'rb');job.files.extend([out,inp])
     for f in (out,inp):os.set_handle_inheritable(msvcrt.get_osfhandle(f.fileno()),True)
     si=subprocess.STARTUPINFO();si.dwFlags=subprocess.STARTF_USESTDHANDLES;si.hStdInput=msvcrt.get_osfhandle(inp.fileno());si.hStdOutput=si.hStdError=msvcrt.get_osfhandle(out.fileno())
-    hp,ht,pid,tid=_winapi.CreateProcess(str(args[0]),subprocess.list2cmdline(args),None,None,True,0x4|0x08000000,None,str(probe.ROOT),si)
+    hp,ht,pid,tid=create_suspended_process(str(args[0]),subprocess.list2cmdline(args),None,None,True,0x4|0x08000000,None,str(probe.ROOT),si)
     job.children.append((hp,pid))
     try:
         probe.must(probe.K.AssignProcessToJobObject(job.handle,hp));ident=process_info(pid)

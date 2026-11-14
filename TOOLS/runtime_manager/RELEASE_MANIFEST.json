@@ -35,7 +35,7 @@
     "scope": "INTEGRATION_ONLY_NOT_FULL_ACCURACY",
     "classifier_guard": "EXISTING_FROZEN_SEMANTIC_SUPERVISOR_AFTER_OCR_EXIT"
   },
-  "public_release_id": "v0.3.0-classic.1",
+  "public_release_id": "v0.3.0-classic.2",
   "distribution_scope": "PUBLIC",
   "unified_release_id": "bemarkdown-unified-20261104-v1",
   "release_id": "bemarkdown-unified-20261104-v1"

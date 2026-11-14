@@ -1,12 +1,12 @@
 {
   "schema": "education-public-tool-release-v1",
-  "release_id": "v0.3.0-classic.1",
+  "release_id": "v0.3.0-classic.2",
   "status": "VALIDATED_PUBLIC_BUILD",
   "source": "../../SOURCE/bemarkdown",
-  "wheel_sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255",
-  "tool_wheel_sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255",
-  "tool_manifest_sha256": "3a54db2a645d8d41958eda51c053fc3c993c1ad5d493176b16de70d387b7a199",
-  "tool_version": "0.3.0+classic.1",
+  "wheel_sha256": "d7de8f938963ab9bc7438fbc305a386e4abef598df67c2e070cd11b1e3f419fe",
+  "tool_wheel_sha256": "d7de8f938963ab9bc7438fbc305a386e4abef598df67c2e070cd11b1e3f419fe",
+  "tool_manifest_sha256": "257096c1011b5017ea4f6c942932b42aa55406a46a8b014a5328e4ce554ff479",
+  "tool_version": "0.3.0+classic.2",
   "baseline": {
     "tool_manifest_sha256": "5f97fb81fc2977167e498a1f454ae3f2e021bf72fd4dd278661c70a43bf88c2a",
     "wheel_sha256": "72510efecc3f991dc87d86ef9adf4e8b6bde6ebe9c114711a0caebce5eef1d63",

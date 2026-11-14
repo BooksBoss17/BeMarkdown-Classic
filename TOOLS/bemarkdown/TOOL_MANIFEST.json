@@ -1,7 +1,7 @@
 {
   "schema": "bemarkdown-tool-manifest-v1",
   "tool_id": "bemarkdown",
-  "tool_version": "0.3.0+classic.1",
+  "tool_version": "0.3.0+classic.2",
   "release_channel": "public-classic",
   "entrypoint": "bemarkdown",
   "python_api": [
@@ -60,38 +60,38 @@
   "python_compatibility": "CPython 3.11.x",
   "validated_platform": "Windows x64",
   "wheel": {
-    "path": "dist/bemarkdown-0.3.0+classic.1-py3-none-any.whl",
-    "sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255",
-    "bytes": 1574832,
+    "path": "dist/bemarkdown-0.3.0+classic.2-py3-none-any.whl",
+    "sha256": "d7de8f938963ab9bc7438fbc305a386e4abef598df67c2e070cd11b1e3f419fe",
+    "bytes": 1576607,
     "content_inventory": {
       "files": [
         {
-          "path": "bemarkdown-0.3.0+classic.1.dist-info/METADATA",
-          "sha256": "fc8c6cb8122df5f55204348df125e55a0dc9d6568fbb5b297aa43eae3d3a5a51",
+          "path": "bemarkdown-0.3.0+classic.2.dist-info/METADATA",
+          "sha256": "1ee1c92ae1951a09250bfd35e42997b48dc4dcebf0e3130304e4ddbb09022cf4",
           "bytes": 1062
         },
         {
-          "path": "bemarkdown-0.3.0+classic.1.dist-info/RECORD",
-          "sha256": "6a1153dbf58c526723889ee40e89ca41a403b9c97f099d548dbe096d7c3ee9d1",
+          "path": "bemarkdown-0.3.0+classic.2.dist-info/RECORD",
+          "sha256": "26c3b4b86f72e49ea2eb6a767078b9c23b0a20315772bc841bcf6c27e04f32ea",
           "bytes": 26076
         },
         {
-          "path": "bemarkdown-0.3.0+classic.1.dist-info/WHEEL",
+          "path": "bemarkdown-0.3.0+classic.2.dist-info/WHEEL",
           "sha256": "98e75747d0b7c0c568bfb71263c3d8f970b3a374a6996087bc642be5cb09a1aa",
           "bytes": 91
         },
         {
-          "path": "bemarkdown-0.3.0+classic.1.dist-info/entry_points.txt",
+          "path": "bemarkdown-0.3.0+classic.2.dist-info/entry_points.txt",
           "sha256": "9f909431989a6f1a3189e94fc3ec3b85ebe1a8f2bc8dd043c6ecec4cec4f5f88",
           "bytes": 95
         },
         {
-          "path": "bemarkdown-0.3.0+classic.1.dist-info/licenses/LICENSE",
+          "path": "bemarkdown-0.3.0+classic.2.dist-info/licenses/LICENSE",
           "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee",
           "bytes": 34020
         },
         {
-          "path": "bemarkdown-0.3.0+classic.1.dist-info/top_level.txt",
+          "path": "bemarkdown-0.3.0+classic.2.dist-info/top_level.txt",
           "sha256": "ebbe366ee0bab27fed3016c9a691887f2475841a852817cce18e3f0517ade381",
           "bytes": 11
         },
@@ -1157,8 +1157,8 @@
         },
         {
           "path": "bemarkdown/runtime/RESOURCE_FORECASTS_6GB.json",
-          "sha256": "cddb656d56f1fbc6c6cd94f123622331c87202da37d67ad5e910bc81a54f8359",
-          "bytes": 19604
+          "sha256": "b89a2b24b82767fa95414faf1da0bda9d01c1840223a2ef952d0095e2c3cf146",
+          "bytes": 25277
         },
         {
           "path": "bemarkdown/scanner.py",
@@ -1227,8 +1227,8 @@
         },
         {
           "path": "bemarkdown/stage_forecasts.py",
-          "sha256": "e1c494d03bceba15effedc22ae5dd67f6afb3adab78878e042b712ba66c646cf",
-          "bytes": 11742
+          "sha256": "aa4ab44e1ed6f3a87abc0ad9bdf413d8b316585b4e15fa47f2c9661181bf20ee",
+          "bytes": 14387
         },
         {
           "path": "bemarkdown/static/formula_review/app.js",
@@ -1447,8 +1447,8 @@
         }
       ],
       "file_count": 276,
-      "total_uncompressed_bytes": 5092468,
-      "content_sha256": "2cdac71f9f70164656f8da0565f00fd88c17e4b09212f6846d4a95b8e0d1ee22"
+      "total_uncompressed_bytes": 5100786,
+      "content_sha256": "f1f9c74c9f911850520fa213c32a20a0741eccf9c3c594b7a92fd560382bb065"
     }
   },
   "runtime": {
@@ -1474,7 +1474,7 @@
     }
   },
   "publication": {
-    "release_id": "v0.3.0-classic.1",
+    "release_id": "v0.3.0-classic.2",
     "status": "VALIDATED_PUBLIC_BUILD",
     "distribution_scope": "PUBLIC",
     "public_redistribution_ready": true,
