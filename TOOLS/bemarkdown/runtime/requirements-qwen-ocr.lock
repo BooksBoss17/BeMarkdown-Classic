@@ -1,0 +1,8 @@
+# Complete frozen OCR forecast dependency set; CPython 3.12.16
+accelerate==1.15.0
+huggingface-hub==1.33.0
+numpy==2.5.4
+pillow==12.3.0
+safetensors==0.8.0
+torch==2.14.0+cu130
+transformers==5.17.0

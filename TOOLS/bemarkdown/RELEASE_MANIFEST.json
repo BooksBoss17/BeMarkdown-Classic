@@ -1,0 +1,17 @@
+{
+  "schema": "education-public-tool-release-v1",
+  "release_id": "v0.3.0-classic.1",
+  "status": "VALIDATED_PUBLIC_BUILD",
+  "source": "../../SOURCE/bemarkdown",
+  "wheel_sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255",
+  "tool_wheel_sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255",
+  "tool_manifest_sha256": "3a54db2a645d8d41958eda51c053fc3c993c1ad5d493176b16de70d387b7a199",
+  "tool_version": "0.3.0+classic.1",
+  "baseline": {
+    "tool_manifest_sha256": "5f97fb81fc2977167e498a1f454ae3f2e021bf72fd4dd278661c70a43bf88c2a",
+    "wheel_sha256": "72510efecc3f991dc87d86ef9adf4e8b6bde6ebe9c114711a0caebce5eef1d63",
+    "source_archive_sha256": "e0d5a1a6726d44ac33f7e7cd241fb681f8dd4ef023dbc6d8859b79fcfae87ce3",
+    "version": "0.3.0+sm120.2"
+  },
+  "scope": "Complete legacy conversion implementation; public installation adapters preserved. No visual-serial candidate."
+}

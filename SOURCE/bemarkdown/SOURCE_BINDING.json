@@ -1,0 +1,7 @@
+{
+  "baseline_version": "0.3.0+sm120.2",
+  "baseline_wheel_sha256": "72510efecc3f991dc87d86ef9adf4e8b6bde6ebe9c114711a0caebce5eef1d63",
+  "adaptation": "Public model metadata bindings and standalone distribution only; legacy algorithms retained",
+  "candidate_route_included": false,
+  "diagnostic_fix": "doctor Qwen smoke uses production 2048-token recipe instead of rejected 64-token recipe; conversion algorithms unchanged"
+}

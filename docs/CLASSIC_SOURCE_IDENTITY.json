@@ -1,0 +1,13 @@
+{
+  "baseline_version": "0.3.0+sm120.2",
+  "release_version": "0.3.0+classic.1",
+  "baseline_python_modules": 236,
+  "retained_modules": 236,
+  "changed_python_modules": [
+    "bemarkdown/doctor.py"
+  ],
+  "change": "diagnostic smoke token budget aligned with frozen production recipe",
+  "conversion_python_modules_unchanged": true,
+  "new_candidate_included": false,
+  "wheel_sha256": "02112d14b9a6d1c2a8c84cade77a388b38fa99f8b1bfa0885e4e24777f2a8255"
+}

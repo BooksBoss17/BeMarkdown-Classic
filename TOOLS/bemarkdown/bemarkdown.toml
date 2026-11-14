@@ -1,0 +1,3 @@
+[workspace]
+output_root = "../../output"
+models_root = "../../MODELS"
